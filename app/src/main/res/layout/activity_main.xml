@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/user_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#F5F5F5">
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Vocabulary Learning"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/word_quiz_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Word Quiz"
+        android:layout_below="@id/start_button"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btn_error_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wrong Words"
+        android:layout_below="@id/word_quiz_button"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_search_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID查询单词"
+        android:layout_below="@id/btn_error_book"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_search_by_spelling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单词拼写查询"
+        android:layout_below="@id/btn_search_word"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_update_user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改用户信息"
+        android:layout_below="@id/btn_search_by_spelling"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
